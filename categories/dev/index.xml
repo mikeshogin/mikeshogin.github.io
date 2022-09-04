@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>dev on Mike Shogin - System Architect</title>
-        <link>https://example.com/categories/dev/</link>
+        <link>https://mikeshogin.com/categories/dev/</link>
         <description>Recent content in dev on Mike Shogin - System Architect</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 22 Aug 2022 13:19:43 +0200</lastBuildDate><atom:link href="https://example.com/categories/dev/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 22 Aug 2022 13:19:43 +0200</lastBuildDate><atom:link href="https://mikeshogin.com/categories/dev/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Inefficient ioutil.ReadAll</title>
-        <link>https://example.com/p/inefficient-ioutil.readall/</link>
+        <link>https://mikeshogin.com/p/inefficient-ioutil.readall/</link>
         <pubDate>Mon, 22 Aug 2022 13:19:43 +0200</pubDate>
         
-        <guid>https://example.com/p/inefficient-ioutil.readall/</guid>
+        <guid>https://mikeshogin.com/p/inefficient-ioutil.readall/</guid>
         <description>&lt;p&gt;Let&amp;rsquo;s consider ReadAll function from ioutil package.
 We use it a lot in our code base.
 In our infrastructure, we have a backend box and we use it for the background tasks.

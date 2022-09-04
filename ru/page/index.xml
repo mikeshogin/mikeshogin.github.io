@@ -2,15 +2,15 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on Михаил Шогин - Системный Архитектор</title>
-        <link>https://example.com/ru/page/</link>
+        <link>https://mikeshogin.com/ru/page/</link>
         <description>Recent content in Pages on Михаил Шогин - Системный Архитектор</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="https://example.com/ru/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language><atom:link href="https://mikeshogin.com/ru/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Обо мне</title>
-        <link>https://example.com/ru/%D0%BE%D0%B1%D0%BE-%D0%BC%D0%BD%D0%B5/</link>
+        <link>https://mikeshogin.com/ru/%D0%BE%D0%B1%D0%BE-%D0%BC%D0%BD%D0%B5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://example.com/ru/%D0%BE%D0%B1%D0%BE-%D0%BC%D0%BD%D0%B5/</guid>
+        <guid>https://mikeshogin.com/ru/%D0%BE%D0%B1%D0%BE-%D0%BC%D0%BD%D0%B5/</guid>
         <description>&lt;p&gt;Я занимаюсь разработкой программного обеспечения с 2004 года. За это время я сделал большое количество
 проектов, работал во многих различных командах в различных ролях.
 По роду деятельности я изучил много различных языков программирования, фреймворков и технологий.&lt;/p&gt;
