@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on Mike Shogin - System Architect</title>
+        <link>https://example.com/page/</link>
+        <description>Recent content in Pages on Mike Shogin - System Architect</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://example.com/about/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/about/</guid>
+        <description>&lt;p&gt;I&amp;rsquo;m doing software development since 2004.
+From that time, I&amp;rsquo;ve done several projects,
+participated in another number of teams
+and played with many different technologies, programming languages and frameworks.&lt;/p&gt;
+&lt;p&gt;In 2013 I joined IPONWEB company as Perl/Lua developer.
+For that period I&amp;rsquo;ve played many different roles in different projects and with different teams.&lt;/p&gt;
+&lt;p&gt;At the moment, I&amp;rsquo;m in Bidcast team and we are working on
+the Intelegent Load Balancer and I could say that&amp;rsquo;s not a trivial task ;).&lt;/p&gt;
+&lt;p&gt;I do Golang coding and diving into the DevOps culture.
+The principles of the DevOps are close to myself and I am happy
+that I am able to experence them and share with others.&lt;/p&gt;
+&lt;p&gt;I used to work with flexible(but slow), strict(but high-perfofmance),
+object oriented, procedural, functional, WebUI, DesktopUI, for Windows, for Linux systems.&lt;/p&gt;
+&lt;p&gt;I found the always working algorithm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Focus on the task&lt;/li&gt;
+&lt;li&gt;Do research&lt;/li&gt;
+&lt;li&gt;Get it DONE&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

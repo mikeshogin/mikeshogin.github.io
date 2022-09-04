@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on Mike Shogin - System Architect</title>
+        <link>https://example.com/tags/</link>
+        <description>Recent content in Tags on Mike Shogin - System Architect</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 22 Aug 2022 13:19:43 +0200</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>memory</title>
+        <link>https://example.com/tags/memory/</link>
+        <pubDate>Mon, 22 Aug 2022 13:19:43 +0200</pubDate>
+        
+        <guid>https://example.com/tags/memory/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>perfomance</title>
+        <link>https://example.com/tags/perfomance/</link>
+        <pubDate>Mon, 22 Aug 2022 13:19:43 +0200</pubDate>
+        
+        <guid>https://example.com/tags/perfomance/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>profiling</title>
+        <link>https://example.com/tags/profiling/</link>
+        <pubDate>Mon, 22 Aug 2022 13:19:43 +0200</pubDate>
+        
+        <guid>https://example.com/tags/profiling/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
