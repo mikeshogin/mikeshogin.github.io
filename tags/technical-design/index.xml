@@ -6,7 +6,41 @@
         <description>Recent content in technical design on Mike Shogin - System Architect</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 02 Dec 2022 17:13:11 +0100</lastBuildDate><atom:link href="https://mikeshogin.com/tags/technical-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 28 Jan 2023 17:13:11 +0100</lastBuildDate><atom:link href="https://mikeshogin.com/tags/technical-design/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Working with architecture - beginning</title>
+        <link>https://mikeshogin.com/p/working-with-architecture-beginning/</link>
+        <pubDate>Sat, 28 Jan 2023 17:13:11 +0100</pubDate>
+        
+        <guid>https://mikeshogin.com/p/working-with-architecture-beginning/</guid>
+        <description>&lt;p&gt;The task you need to improve the architecture of the existing system. How can you do that?
+What must you start with?&lt;/p&gt;
+&lt;p&gt;Basic algo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Research the current architecture&lt;/li&gt;
+&lt;li&gt;Create a set of the metrics&lt;/li&gt;
+&lt;li&gt;Agree with the stake-holders about every metric&lt;/li&gt;
+&lt;li&gt;Calculate the metrics values&lt;/li&gt;
+&lt;li&gt;Define the thresholds for the metrics&lt;/li&gt;
+&lt;li&gt;Take the 2 most important metrics&lt;/li&gt;
+&lt;li&gt;Define 2 Epics&lt;/li&gt;
+&lt;li&gt;Discuss the epics with the team&lt;/li&gt;
+&lt;li&gt;Define the affected components&lt;/li&gt;
+&lt;li&gt;Research the problem in detail&lt;/li&gt;
+&lt;li&gt;Describe the current architecture&lt;/li&gt;
+&lt;li&gt;Create the target architecture&lt;/li&gt;
+&lt;li&gt;Create the architectural GAP&lt;/li&gt;
+&lt;li&gt;Discuss the Target and the GAP with stakeholders&lt;/li&gt;
+&lt;li&gt;Discuss the Target and the GAP with teams&lt;/li&gt;
+&lt;li&gt;Define stages to remove the GAP&lt;/li&gt;
+&lt;li&gt;Create Design Docs, or Architectural Description&lt;/li&gt;
+&lt;li&gt;Create the tickets&lt;/li&gt;
+&lt;li&gt;Do the job&lt;/li&gt;
+&lt;li&gt;Calculate the metrics&lt;/li&gt;
+&lt;li&gt;Ensure the thresholds are met&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>Software Architecture: Conceptual and Technical Design</title>
         <link>https://mikeshogin.com/p/software-architecture-conceptual-and-technical-design/</link>
         <pubDate>Fri, 02 Dec 2022 17:13:11 +0100</pubDate>
