@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico">
+  <script src="/libs/zopfli.min.js"></script>
+  <title>DocHub - Modern Documentation</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --primary-light: #ebf3ff;
+      --primary-dark: #0143a3;
+      --secondary-color: #6c757d;
+      --background-color: #f8f9fa;
+      --dark-background: #212529;
+      --text-color: #212529;
+      --light-text: #6c757d;
+      --border-color: #dee2e6;
+      --success-color: #198754;
+      --warning-color: #ffc107;
+      --danger-color: #dc3545;
+      --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+      --border-radius: 0.5rem;
+      --transition: all 0.3s ease;
+      --code-bg: #f5f7fa;
+      --sidebar-width: 280px;
+      --header-height: 64px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--primary-dark);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-top: 2.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    code {
+      font-family: 'Roboto Mono', monospace;
+      background-color: var(--code-bg);
+      padding: 0.2rem 0.4rem;
+      border-radius: 0.25rem;
+      font-size: 0.875rem;
+      color: var(--primary-dark);
+    }
+
+    pre {
+      background-color: var(--code-bg);
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    pre code {
+      background-color: transparent;
+      padding: 0;
+      font-size: 0.9rem;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      font-weight: 500;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      border-radius: 0.3rem;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+      color: #fff;
+    }
+
+    .btn-outline-primary {
+      color: var(--primary-color);
+      background-color: transparent;
+      border-color: var(--primary-color);
+    }
+
+    .btn-outline-primary:hover {
+      color: #fff;
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      border-radius: 0.25rem;
+      text-transform: uppercase;
+    }
+
+    .badge-primary {
+      background-color: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .badge-success {
+      background-color: rgba(25, 135, 84, 0.1);
+      color: var(--success-color);
+    }
+
+    .badge-warning {
+      background-color: rgba(255, 193, 7, 0.1);
+      color: #997404;
+    }
+
+    .badge-danger {
+      background-color: rgba(220, 53, 69, 0.1);
+      color: var(--danger-color);
+    }
+
+    .badge-secondary {
+      background-color: rgba(108, 117, 125, 0.1);
+      color: var(--secondary-color);
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+    }
+
+    .card-header {
+      padding: 1rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      background-color: #fff;
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+      background-color: #fff;
+    }
+
+    /* Header styles */
+    .header {
+      background-color: #fff;
+      box-shadow: var(--box-shadow);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: var(--header-height);
+      display: flex;
+      align-items: center;
+      padding: 0 1.5rem;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--text-color);
+      display: flex;
+      align-items: center;
+    }
+
+    .logo i {
+      color: var(--primary-color);
+      font-size: 1.75rem;
+      margin-right: 0.5rem;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-item {
+      margin-left: 1.5rem;
+    }
+
+    .nav-link {
+      color: var(--text-color);
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-color);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--text-color);
+      cursor: pointer;
+    }
+
+    /* Layout styles */
+    .main {
+      min-height: calc(100vh - var(--header-height));
+      display: flex;
+      background-color: var(--background-color);
+    }
+
+    .sidebar {
+      width: var(--sidebar-width);
+      background-color: #fff;
+      border-right: 1px solid var(--border-color);
+      height: calc(100vh - var(--header-height));
+      position: sticky;
+      top: var(--header-height);
+      overflow-y: auto;
+      padding: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar-heading {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--light-text);
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.05em;
+    }
+
+    .sidebar-item {
+      margin-bottom: 0.25rem;
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 0;
+      color: var(--text-color);
+      border-radius: 0.25rem;
+      transition: var(--transition);
+    }
+
+    .sidebar-link:hover, .sidebar-link.active {
+      color: var(--primary-color);
+      background-color: var(--primary-light);
+      padding-left: 0.5rem;
+    }
+
+    .sidebar-link i {
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .content {
+      flex: 1;
+      padding: 2rem;
+      max-width: 100%;
+    }
+
+    /* Component styles */
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--box-shadow);
+    }
+
+    th, td {
+      padding: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+      text-align: left;
+    }
+
+    th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+      color: var(--secondary-color);
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Hero section */
+    .hero {
+      padding: 3rem 0;
+      background-color: var(--primary-light);
+      margin-bottom: 2rem;
+      border-radius: var(--border-radius);
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary-dark);
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--secondary-color);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    /* Feature cards */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature-card {
+      background-color: #fff;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      padding: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+    }
+
+    .feature-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .feature-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-description {
+      color: var(--light-text);
+      margin-bottom: 0;
+    }
+
+    /* Footer styles */
+    .footer {
+      background-color: #fff;
+      border-top: 1px solid var(--border-color);
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-link {
+      color: var(--light-text);
+      transition: var(--transition);
+    }
+
+    .footer-link:hover {
+      color: var(--primary-color);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 991px) {
+      .sidebar {
+        position: fixed;
+        left: -280px;
+        z-index: 1001;
+      }
+
+      .sidebar.show {
+        left: 0;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100% - var(--header-height));
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+      }
+
+      .overlay.show {
+        display: block;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .header {
+        padding: 0 1rem;
+      }
+
+      .content {
+        padding: 1.5rem 1rem;
+      }
+
+      .nav-list {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        flex-direction: column;
+        background-color: #fff;
+        padding: 1.5rem;
+        transform: translateX(-100%);
+        transition: var(--transition);
+        z-index: 1001;
+      }
+
+      .nav-list.show {
+        transform: translateX(0);
+      }
+
+      .nav-item {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-nav {
+        justify-content: center;
+        margin: 1rem 0;
+      }
+
+      .footer-social {
+        justify-content: center;
+      }
+    }
+
+    /* Accordion component */
+    .accordion {
+      margin-bottom: 1.5rem;
+    }
+
+    .accordion-item {
+      border: 1px solid var(--border-color);
+      border-radius: var(--border-radius);
+      margin-bottom: 0.5rem;
+      overflow: hidden;
+    }
+
+    .accordion-header {
+      background-color: #fff;
+      padding: 0;
+    }
+
+    .accordion-button {
+      width: 100%;
+      text-align: left;
+      padding: 1rem 1.5rem;
+      font-weight: 500;
+      color: var(--text-color);
+      background-color: #fff;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+
+    .accordion-button::after {
+      content: '\F282';
+      font-family: 'bootstrap-icons';
+      font-size: 1.25rem;
+      color: var(--light-text);
+      transition: var(--transition);
+    }
+
+    .accordion-button[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+    }
+
+    .accordion-button:hover {
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+    }
+
+    .accordion-body {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    /* Dark mode toggle */
+    .dark-mode-toggle {
+      margin-left: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .dark-mode-toggle:hover {
+      background-color: var(--primary-light);
+      color: var(--primary-color);
+    }
+
+    /* Search component */
+    .search-container {
+      position: relative;
+      margin-right: 1rem;
+    }
+
+    .search-input {
+      width: 200px;
+      padding: 0.5rem 1rem 0.5rem 2.5rem;
+      border: 1px solid var(--border-color);
+      border-radius: 1.5rem;
+      background-color: var(--background-color);
+      font-size: 0.875rem;
+      transition: var(--transition);
+    }
+
+    .search-input:focus {
+      width: 300px;
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--light-text);
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <i class="bi bi-journal-code"></i>
+        DocHub
+      </a>
+      
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="bi bi-list"></i>
+      </button>
+      
+      <nav class="nav">
+        <div class="search-container">
+          <i class="bi bi-search search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search documentation...">
+        </div>
+        
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Architecture</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">API</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Help</a>
+          </li>
+        </ul>
+        
+        <button class="dark-mode-toggle" id="darkModeToggle">
+          <i class="bi bi-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-heading">Getting Started</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link active">
+            <i class="bi bi-house"></i>
+            Introduction
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-rocket"></i>
+            Quick Start
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-book"></i>
+            Concepts
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-heading">Architecture</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-diagram-3"></i>
+            Overview
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-grid-3x3"></i>
+            Aspects
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-box"></i>
+            Components
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-link-45deg"></i>
+            Contexts
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-patch-check"></i>
+            Rules
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-heading">Documentation</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-markdown"></i>
+            Markdown
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-diagram-2"></i>
+            PlantUML
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-code-square"></i>
+            Smart Ants
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-clipboard-data"></i>
+            Tables
+          </a>
+        </li>
+      </ul>
+
+      <div class="sidebar-heading">Tools</div>
+      <ul class="sidebar-menu">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-gear"></i>
+            Settings
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-plugin"></i>
+            Plugins
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-box-arrow-up-right"></i>
+            Extensions
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Welcome to DocHub</h1>
+          <p>A modern documentation platform for your architecture and API documentation</p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Get Started</a>
+            <a href="#" class="btn btn-outline-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <h2>What is DocHub?</h2>
+      <p>DocHub is a powerful documentation platform that helps teams create, organize, and share their technical documentation. It supports multiple formats including Markdown, PlantUML, YAML, and more, allowing you to create comprehensive documentation that is both easy to write and beautiful to read.</p>
+
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-rocket"></i>
+          </div>
+          <h3 class="feature-title">Easy to Use</h3>
+          <p class="feature-description">Create beautiful documentation with simple markup languages and intuitive interfaces.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-diagram-3"></i>
+          </div>
+          <h3 class="feature-title">Architecture Diagrams</h3>
+          <p class="feature-description">Generate diagrams from code using PlantUML, Mermaid, and other diagramming tools.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-code-square"></i>
+          </div>
+          <h3 class="feature-title">API Documentation</h3>
+          <p class="feature-description">Document your APIs with OpenAPI, AsyncAPI, and other industry-standard formats.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-layers"></i>
+          </div>
+          <h3 class="feature-title">Component-Based</h3>
+          <p class="feature-description">Organize your documentation into reusable components for better maintainability.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-plugin"></i>
+          </div>
+          <h3 class="feature-title">Extensible</h3>
+          <p class="feature-description">Extend functionality with plugins and custom templates to fit your needs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="bi bi-people"></i>
+          </div>
+          <h3 class="feature-title">Collaborative</h3>
+          <p class="feature-description">Work together with your team on documentation using version control and review tools.</p>
+        </div>
+      </div>
+
+      <h2>Getting Started</h2>
+      <p>Follow these simple steps to start using DocHub for your documentation needs:</p>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step1" aria-expanded="true" aria-controls="step1">
+              1. Create your first document
+            </button>
+          </h2>
+          <div id="step1" class="accordion-body">
+            <p>Start by creating a new Markdown or YAML file in your documentation directory. You can use any text editor to create these files.</p>
+            <pre><code># Welcome to My Documentation
+
+This is a simple Markdown document that will be rendered by DocHub.
+
+## Features
+
+- Easy to write
+- Looks great
+- Supports code blocks
+
+```python
+def hello_world():
+    print("Hello, DocHub!")
+```</code></pre>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step2" aria-expanded="false" aria-controls="step2">
+              2. Configure your documentation structure
+            </button>
+          </h2>
+          <div id="step2" class="accordion-body">
+            <p>Create a <code>dochub.yaml</code> file to define the structure of your documentation:</p>
+            <pre><code>title: My Project Documentation
+description: Documentation for my awesome project
+version: 1.0.0
+structure:
+  - title: Introduction
+    path: introduction.md
+  - title: Architecture
+    children:
+      - title: Overview
+        path: arch/overview.md
+      - title: Components
+        path: arch/components.md</code></pre>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step3" aria-expanded="false" aria-controls="step3">
+              3. Add diagrams and visualizations
+            </button>
+          </h2>
+          <div id="step3" class="accordion-body">
+            <p>DocHub supports PlantUML for creating diagrams:</p>
+            <pre><code>@startuml
+package "Frontend" {
+  [Web App]
+  [Mobile App]
+}
+
+package "Backend" {
+  [API Gateway]
+  [User Service]
+  [Content Service]
+  [Database]
+}
+
+[Web App] --> [API Gateway]
+[Mobile App] --> [API Gateway]
+[API Gateway] --> [User Service]
+[API Gateway] --> [Content Service]
+[User Service] --> [Database]
+[Content Service] --> [Database]
+@enduml</code></pre>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#step4" aria-expanded="false" aria-controls="step4">
+              4. Build and deploy
+            </button>
+          </h2>
+          <div id="step4" class="accordion-body">
+            <p>Build your documentation site and deploy it:</p>
+            <pre><code># Build the documentation
+npm run build
+
+# Deploy to your server
+npm run deploy</code></pre>
+            <p>Or use GitHub Pages for easy hosting:</p>
+            <pre><code># Deploy to GitHub Pages
+npm run deploy:github</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <h2>Explore Components</h2>
+      <p>DocHub organizes architecture and documentation into reusable components that can be referenced across your documentation.</p>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Component Type</th>
+              <th>Description</th>
+              <th>Format</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aspects</td>
+              <td>Cross-cutting concerns and perspectives</td>
+              <td>YAML</td>
+            </tr>
+            <tr>
+              <td>Components</td>
+              <td>Architectural building blocks</td>
+              <td>YAML</td>
+            </tr>
+            <tr>
+              <td>Contexts</td>
+              <td>Bounded contexts and domains</td>
+              <td>YAML, PlantUML</td>
+            </tr>
+            <tr>
+              <td>Documents</td>
+              <td>Documentation pages and sections</td>
+              <td>Markdown, YAML</td>
+            </tr>
+            <tr>
+              <td>Rules</td>
+              <td>Validation and architectural rules</td>
+              <td>YAML</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Featured Plugins</h2>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">DrawIO Integration</h3>
+          <span class="badge badge-primary">Plugin</span>
+        </div>
+        <div class="card-body">
+          <p>Create and edit diagrams directly in DocHub using the DrawIO integration plugin. This allows you to create professional diagrams with a familiar interface.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">BPMN Viewer</h3>
+          <span class="badge badge-primary">Plugin</span>
+        </div>
+        <div class="card-body">
+          <p>View and interact with Business Process Model and Notation (BPMN) diagrams to document your business processes and workflows.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Charts</h3>
+          <span class="badge badge-primary">Plugin</span>
+        </div>
+        <div class="card-body">
+          <p>Create beautiful charts and graphs to visualize your data. Supports bar charts, line charts, pie charts, and more.</p>
+          <a href="#" class="btn btn-outline-primary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div>
+        <div class="footer-logo">DocHub</div>
+        <p>A modern documentation platform for your architecture and API documentation.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-slack"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div>
+        <nav class="footer-nav">
+          <a href="#" class="footer-link">Home</a>
+          <a href="#" class="footer-link">Documentation</a>
+          <a href="#" class="footer-link">Architecture</a>
+          <a href="#" class="footer-link">API</a>
+          <a href="#" class="footer-link">Help</a>
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+    const navList = document.querySelector('.nav-list');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      sidebar.classList.toggle('show');
+      overlay.classList.toggle('show');
+      navList.classList.toggle('show');
+    });
+    
+    overlay.addEventListener('click', () => {
+      sidebar.classList.remove('show');
+      overlay.classList.remove('show');
+      navList.classList.remove('show');
+    });
+    
+    // Dark mode toggle
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    const darkModeIcon = darkModeToggle.querySelector('i');
+    
+    // Check for saved theme preference or respect OS preference
+    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme === 'dark' || (!savedTheme && prefersDarkMode)) {
+      enableDarkMode();
+    }
+    
+    function enableDarkMode() {
+      body.classList.add('dark-theme');
+      darkModeIcon.classList.remove('bi-moon');
+      darkModeIcon.classList.add('bi-sun');
+      localStorage.setItem('theme', 'dark');
+    }
+    
+    function disableDarkMode() {
+      body.classList.remove('dark-theme');
+      darkModeIcon.classList.remove('bi-sun');
+      darkModeIcon.classList.add('bi-moon');
+      localStorage.setItem('theme', 'light');
+    }
+    
+    darkModeToggle.addEventListener('click', () => {
+      if (body.classList.contains('dark-theme')) {
+        disableDarkMode();
+      } else {
+        enableDarkMode();
+      }
+    });
+    
+    // Accordion functionality
+    const accordionButtons = document.querySelectorAll('.accordion-button');
+    
+    accordionButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        
+        // Close all accordions
+        accordionButtons.forEach(btn => {
+          btn.setAttribute('aria-expanded', 'false');
+          const targetId = btn.getAttribute('data-bs-target').substring(1);
+          const target = document.getElementById(targetId);
+          target.style.display = 'none';
+        });
+        
+        // Toggle current accordion
+        if (!expanded) {
+          button.setAttribute('aria-expanded', 'true');
+          const targetId = button.getAttribute('data-bs-target').substring(1);
+          const target = document.getElementById(targetId);
+          target.style.display = 'block';
+        }
+      });
+    });
+    
+    // Initialize the first accordion as open
+    const firstAccordionButton = accordionButtons[0];
+    if (firstAccordionButton) {
+      firstAccordionButton.setAttribute('aria-expanded', 'true');
+      const targetId = firstAccordionButton.getAttribute('data-bs-target').substring(1);
+      const target = document.getElementById(targetId);
+      target.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
