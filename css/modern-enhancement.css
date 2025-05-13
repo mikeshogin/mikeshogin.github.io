@@ -1,0 +1,368 @@
+/* Modern Enhancement CSS - Preserves original structure with improved styling */
+
+/* Google Fonts Import - add this to head: 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+*/
+
+:root {
+  --primary-color: #0d6efd;
+  --primary-light: #ebf3ff;
+  --primary-dark: #0143a3;
+  --secondary-color: #6c757d;
+  --text-color: #212529;
+  --light-text: #6c757d;
+  --border-color: #dee2e6;
+  --success-color: #198754;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  --border-radius: 0.5rem;
+}
+
+/* Base styles that enhance existing elements */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background-color: #f8f9fa;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f5f7fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--primary-dark);
+}
+
+pre {
+  background-color: #f5f7fa;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+/* Enhance existing header */
+.header {
+  background-color: #fff !important;
+  box-shadow: var(--box-shadow);
+  padding: 15px !important;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+/* Table enhancements */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Card styling for content sections */
+.asyncapi__info,
+.asyncapi__messages > div,
+.asyncapi__schemas > div,
+.asyncapi__channels > div,
+.asyncapi__servers > div {
+  background: #fff;
+  border-radius: var(--border-radius) !important;
+  border: 1px solid rgba(151, 151, 151, 0.1) !important;
+  box-shadow: var(--box-shadow) !important;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.asyncapi__info:hover,
+.asyncapi__messages > div:hover,
+.asyncapi__schemas > div:hover,
+.asyncapi__channels > div:hover,
+.asyncapi__servers > div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Enhance toggle components */
+.asyncapi__toggle-header {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  transition: all 0.3s ease;
+}
+
+.asyncapi__toggle-header:hover {
+  background-color: var(--primary-light);
+}
+
+.asyncapi__toggle-button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.asyncapi__toggle-button:hover {
+  background-color: var(--primary-light);
+}
+
+/* Badge enhancements */
+.asyncapi__badge {
+  border-radius: 2rem !important;
+  font-weight: 600 !important;
+  padding: 0.25rem 0.75rem !important;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.7rem !important;
+}
+
+.asyncapi__badge--publish {
+  background-color: rgba(24, 135, 61, 0.1) !important;
+}
+
+.asyncapi__badge--subscribe {
+  background-color: rgba(16, 126, 227, 0.1) !important;
+}
+
+.asyncapi__badge--deprecated {
+  background-color: rgba(245, 151, 2, 0.1) !important;
+}
+
+.asyncapi__badge--required {
+  background-color: rgba(245, 151, 2, 0.1) !important;
+}
+
+/* Message styling improvements */
+.asyncapi__message {
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--border-color) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03) !important;
+  transition: all 0.3s ease;
+}
+
+.asyncapi__message:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+.asyncapi__message-header-title > h3 {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+/* Code block styling */
+.asyncapi__code {
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--border-color) !important;
+  overflow: hidden;
+}
+
+.asyncapi__code-header {
+  background-color: #f8f9fa !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  padding: 0.75rem 1rem !important;
+}
+
+.asyncapi__code-pre {
+  background-color: #f8f9fa !important;
+  padding: 1rem !important;
+}
+
+.asyncapi__code-body {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 0.875rem !important;
+}
+
+/* Server improvements */
+.asyncapi__server {
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--border-color) !important;
+  overflow: hidden;
+}
+
+.asyncapi__server-header {
+  padding: 1rem !important;
+  background-color: #f8f9fa !important;
+}
+
+/* Button styling */
+.asyncapi__collapse-button {
+  background-color: #fff !important;
+  border: 1px solid var(--primary-color) !important;
+  border-radius: var(--border-radius) !important;
+  color: var(--primary-color) !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.asyncapi__collapse-button:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+/* Link improvements */
+.asyncapi__info-list > li {
+  border-radius: var(--border-radius) !important;
+  border: 1px solid var(--primary-color) !important;
+  transition: all 0.3s ease !important;
+}
+
+.asyncapi__info-list > li a {
+  font-weight: 500 !important;
+  padding: 0.4rem 0.8rem !important;
+}
+
+/* Markdown content improvements */
+.asyncapi__markdown > div > p {
+  margin-bottom: 1rem !important;
+}
+
+.asyncapi__markdown > div > ul {
+  margin-bottom: 1rem !important;
+}
+
+.asyncapi__markdown code {
+  background-color: #f5f7fa !important;
+  color: var(--primary-dark) !important;
+  padding: 0.2rem 0.4rem !important;
+  border-radius: 0.25rem !important;
+}
+
+/* Tag styling */
+.asyncapi__tag {
+  border-radius: 2rem !important;
+  background-color: var(--primary-light) !important;
+  color: var(--primary-dark) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease;
+}
+
+.asyncapi__tag:hover {
+  background-color: var(--primary-color) !important;
+  color: #fff !important;
+}
+
+/* Form field improvements */
+input, select, textarea {
+  border: 1px solid var(--border-color);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+}
+
+/* Improved scrollbars (WebKit browsers) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+  
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* Animations for hover effects */
+@keyframes subtle-fade {
+  0% {
+    opacity: 0.8;
+    transform: translateY(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to accordion content */
+.asyncapi__toggle--expanded > .asyncapi__toggle-body {
+  animation: subtle-fade 0.3s ease-out;
+}
