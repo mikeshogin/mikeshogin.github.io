@@ -1,5 +1,0 @@
-$package:
-  dochub-doc:
-    version: 3.0.0
-imports:
-  - root.yaml

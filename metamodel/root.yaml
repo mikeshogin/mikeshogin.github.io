@@ -1,8 +1,0 @@
-# Стартовая страница для плагина
-docs:
-  dochub.welcome:
-    type: markdown
-    source: docs/welcome.md
-
-imports:
-  - dochub/root.yaml
