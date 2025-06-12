@@ -1,0 +1,28 @@
+{
+  "id": "portfolio/diagrams",
+  "title": "Architecture Diagrams",
+  "description": "Visual representations of system architectures and design patterns from real projects",
+  "source": "@site/docs/portfolio/diagrams.md",
+  "sourceDirName": "portfolio",
+  "slug": "/portfolio/diagrams",
+  "permalink": "/ru/portfolio/diagrams",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/portfolio/diagrams.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "diagrams",
+    "title": "Architecture Diagrams",
+    "description": "Visual representations of system architectures and design patterns from real projects"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Architecture Decision Records",
+    "permalink": "/ru/portfolio/adrs"
+  },
+  "next": {
+    "title": "Resources & Knowledge Hub",
+    "permalink": "/ru/resources"
+  }
+}

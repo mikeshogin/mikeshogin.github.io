@@ -1,0 +1,29 @@
+{
+  "id": "about",
+  "title": "About",
+  "description": "System Analyst & IT Architect - Professional background and expertise",
+  "source": "@site/docs/about.md",
+  "sourceDirName": ".",
+  "slug": "/about",
+  "permalink": "/about",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/about.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "about",
+    "title": "About",
+    "description": "System Analyst & IT Architect - Professional background and expertise",
+    "slug": "/about"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Welcome",
+    "permalink": "/"
+  },
+  "next": {
+    "title": "Services Overview",
+    "permalink": "/services"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "services/mentorship",
+  "title": "Mentorship & Coaching",
+  "description": "Accelerate career growth for developers and engineering managers through structured mentorship programs",
+  "source": "@site/docs/services/mentorship.md",
+  "sourceDirName": "services",
+  "slug": "/services/mentorship",
+  "permalink": "/ru/services/mentorship",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/services/mentorship.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "mentorship",
+    "title": "Mentorship & Coaching",
+    "description": "Accelerate career growth for developers and engineering managers through structured mentorship programs"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "System Analysis",
+    "permalink": "/ru/services/system-analysis"
+  },
+  "next": {
+    "title": "IT Consulting",
+    "permalink": "/ru/services/consulting"
+  }
+}

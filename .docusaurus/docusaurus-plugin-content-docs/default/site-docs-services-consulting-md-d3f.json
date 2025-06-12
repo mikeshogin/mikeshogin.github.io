@@ -1,0 +1,28 @@
+{
+  "id": "services/consulting",
+  "title": "IT Consulting",
+  "description": "Strategic technology guidance for startups and established companies",
+  "source": "@site/docs/services/consulting.md",
+  "sourceDirName": "services",
+  "slug": "/services/consulting",
+  "permalink": "/ru/services/consulting",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/services/consulting.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "consulting",
+    "title": "IT Consulting",
+    "description": "Strategic technology guidance for startups and established companies"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Mentorship & Coaching",
+    "permalink": "/ru/services/mentorship"
+  },
+  "next": {
+    "title": "Architecture Audit",
+    "permalink": "/ru/services/architecture-audit"
+  }
+}

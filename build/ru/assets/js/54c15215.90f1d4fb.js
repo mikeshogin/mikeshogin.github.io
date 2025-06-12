@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeshogin_website=self.webpackChunkmikeshogin_website||[]).push([[299],{4354:e=>{e.exports=JSON.parse('{"permalink":"/ru/blog/tags/architecture","page":1,"postsPerPage":8,"totalPages":1,"totalCount":1,"blogDescription":"Insights on system analysis, architecture, and IT consulting","blogTitle":"Blog"}')}}]);

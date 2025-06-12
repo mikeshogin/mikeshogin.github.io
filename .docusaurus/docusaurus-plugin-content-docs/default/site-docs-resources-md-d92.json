@@ -1,0 +1,24 @@
+{
+  "id": "resources",
+  "title": "Resources & Knowledge Hub",
+  "description": "Technical resources, insights, and knowledge sharing for system analysts and IT architects",
+  "source": "@site/docs/resources.md",
+  "sourceDirName": ".",
+  "slug": "/resources",
+  "permalink": "/ru/resources",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/resources.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "resources",
+    "title": "Resources & Knowledge Hub",
+    "description": "Technical resources, insights, and knowledge sharing for system analysts and IT architects"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Architecture Diagrams",
+    "permalink": "/ru/portfolio/diagrams"
+  }
+}

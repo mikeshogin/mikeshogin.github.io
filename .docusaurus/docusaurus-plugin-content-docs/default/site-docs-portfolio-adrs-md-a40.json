@@ -1,0 +1,28 @@
+{
+  "id": "portfolio/adrs",
+  "title": "Architecture Decision Records",
+  "description": "Collection of architectural decisions and their rationale from real projects",
+  "source": "@site/docs/portfolio/adrs.md",
+  "sourceDirName": "portfolio",
+  "slug": "/portfolio/adrs",
+  "permalink": "/ru/portfolio/adrs",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/portfolio/adrs.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "adrs",
+    "title": "Architecture Decision Records",
+    "description": "Collection of architectural decisions and their rationale from real projects"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Portfolio",
+    "permalink": "/ru/portfolio"
+  },
+  "next": {
+    "title": "Architecture Diagrams",
+    "permalink": "/ru/portfolio/diagrams"
+  }
+}

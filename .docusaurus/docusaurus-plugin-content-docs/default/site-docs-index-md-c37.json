@@ -1,0 +1,25 @@
+{
+  "id": "index",
+  "title": "Welcome",
+  "description": "System Analyst & IT Architect - Building better systems through strategic analysis",
+  "source": "@site/docs/index.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "index",
+    "title": "Welcome",
+    "description": "System Analyst & IT Architect - Building better systems through strategic analysis",
+    "slug": "/"
+  },
+  "sidebar": "mainSidebar",
+  "next": {
+    "title": "About",
+    "permalink": "/about"
+  }
+}

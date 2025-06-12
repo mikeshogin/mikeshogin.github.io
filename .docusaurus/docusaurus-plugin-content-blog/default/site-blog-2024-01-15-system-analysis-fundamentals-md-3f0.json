@@ -1,0 +1,47 @@
+{
+  "permalink": "/ru/blog/system-analysis-fundamentals",
+  "source": "@site/blog/2024-01-15-system-analysis-fundamentals.md",
+  "title": "System Analysis Fundamentals - A Practitioner's Guide",
+  "description": "System analysis is the cornerstone of building scalable, maintainable software systems. After conducting 50+ system analyses across various domains, I've distilled the key principles and methodologies that consistently lead to successful outcomes.",
+  "date": "2024-01-15T00:00:00.000Z",
+  "formattedDate": "15 января 2024 г.",
+  "tags": [
+    {
+      "label": "system-analysis",
+      "permalink": "/ru/blog/tags/system-analysis"
+    },
+    {
+      "label": "architecture",
+      "permalink": "/ru/blog/tags/architecture"
+    },
+    {
+      "label": "methodology",
+      "permalink": "/ru/blog/tags/methodology"
+    }
+  ],
+  "readingTime": 5.93,
+  "hasTruncateMarker": true,
+  "authors": [
+    {
+      "name": "Mike Shogin",
+      "title": "System Analyst & IT Architect",
+      "url": "https://mikeshogin.com",
+      "email": "contact@mikeshogin.com",
+      "imageURL": "/img/mike-avatar.jpg",
+      "key": "mike"
+    }
+  ],
+  "frontMatter": {
+    "slug": "system-analysis-fundamentals",
+    "title": "System Analysis Fundamentals - A Practitioner's Guide",
+    "authors": [
+      "mike"
+    ],
+    "tags": [
+      "system-analysis",
+      "architecture",
+      "methodology"
+    ]
+  },
+  "unlisted": false
+}

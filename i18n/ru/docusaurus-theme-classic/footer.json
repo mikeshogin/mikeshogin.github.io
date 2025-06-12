@@ -1,0 +1,110 @@
+{
+  "links.title.Services": {
+    "message": "Услуги",
+    "description": "The title of the footer links column with title=Services"
+  },
+  "links.title.Resources": {
+    "message": "Ресурсы",
+    "description": "The title of the footer links column with title=Resources"
+  },
+  "links.title.Connect": {
+    "message": "Связаться",
+    "description": "The title of the footer links column with title=Connect"
+  },
+  "link.title.System Analysis": {
+    "message": "Системный анализ",
+    "description": "The label of footer link with label=System Analysis linking to /services/system-analysis"
+  },
+  "link.title.Mentorship & Coaching": {
+    "message": "Менторство и коучинг",
+    "description": "The label of footer link with label=Mentorship & Coaching linking to /services/mentorship"
+  },
+  "link.title.IT Consulting": {
+    "message": "IT-консалтинг",
+    "description": "The label of footer link with label=IT Consulting linking to /services/consulting"
+  },
+  "link.title.Architecture Audit": {
+    "message": "Аудит архитектуры",
+    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture-audit"
+  },
+  "link.title.Blog": {
+    "message": "Блог",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.title.Portfolio": {
+    "message": "Портфолио",
+    "description": "The label of footer link with label=Portfolio linking to /portfolio"
+  },
+  "link.title.About": {
+    "message": "Обо мне",
+    "description": "The label of footer link with label=About linking to /about"
+  },
+  "link.title.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to LinkedIn profile"
+  },
+  "link.title.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to GitHub profile"
+  },
+  "link.title.Email": {
+    "message": "Электронная почта",
+    "description": "The label of footer link with label=Email linking to email"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 Майк Шогин. Создано с помощью Docusaurus.",
+    "description": "The footer copyright"
+  },
+  "link.title.Services": {
+    "message": "Услуги",
+    "description": "The title of the footer links column with title=Services in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Ресурсы",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Connect": {
+    "message": "Связаться",
+    "description": "The title of the footer links column with title=Connect in the footer"
+  },
+  "link.item.label.System Analysis": {
+    "message": "Системный анализ",
+    "description": "The label of footer link with label=System Analysis linking to /services/system-analysis"
+  },
+  "link.item.label.Mentorship & Coaching": {
+    "message": "Менторство и коучинг",
+    "description": "The label of footer link with label=Mentorship & Coaching linking to /services/mentorship"
+  },
+  "link.item.label.IT Consulting": {
+    "message": "IT-консалтинг",
+    "description": "The label of footer link with label=IT Consulting linking to /services/consulting"
+  },
+  "link.item.label.Architecture Audit": {
+    "message": "Аудит архитектуры",
+    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture-audit"
+  },
+  "link.item.label.Blog": {
+    "message": "Блог",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.Portfolio": {
+    "message": "Портфолио",
+    "description": "The label of footer link with label=Portfolio linking to /portfolio"
+  },
+  "link.item.label.About": {
+    "message": "Обо мне",
+    "description": "The label of footer link with label=About linking to /about"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://linkedin.com/in/mikeshogin"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/mikeshogin"
+  },
+  "link.item.label.Email": {
+    "message": "Электронная почта",
+    "description": "The label of footer link with label=Email linking to mailto:contact@mikeshogin.com"
+  }
+}

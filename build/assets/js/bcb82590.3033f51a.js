@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikeshogin_website=self.webpackChunkmikeshogin_website||[]).push([[392],{1750:e=>{e.exports=JSON.parse('{"label":"methodology","permalink":"/blog/tags/methodology","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

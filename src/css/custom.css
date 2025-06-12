@@ -1,0 +1,772 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Primary Colors - Confident Blue */
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #dbeafe;
+  
+  /* Custom Color Palette */
+  --color-primary-accent: #2563eb;
+  --color-link-hover: #1d4ed8;
+  --color-background: #f8f9fa;
+  --color-sidebar-bg: #eef1f4;
+  --color-text-main: #111827;
+  --color-text-muted: #6b7280;
+  --color-code-bg: #f1f5f9;
+  --color-divider: #e5e7eb;
+  --color-highlight: #facc15;
+  --color-ai-accent: #7c3aed;
+  
+  /* Background Colors */
+  --ifm-background-color: #f8f9fa;
+  --ifm-background-surface-color: #ffffff;
+  
+  /* Text Colors */
+  --ifm-color-content: #111827;
+  --ifm-color-content-secondary: #6b7280;
+  --ifm-color-emphasis-300: #6b7280;
+  --ifm-color-emphasis-600: #4b5563;
+  --ifm-color-emphasis-700: #374151;
+  --ifm-color-emphasis-800: #1f2937;
+  --ifm-color-emphasis-900: #111827;
+  
+  /* Border and Divider Colors */
+  --ifm-color-emphasis-100: #f3f4f6;
+  --ifm-color-emphasis-200: #e5e7eb;
+  --ifm-toc-border-color: #e5e7eb;
+  
+  /* Code Block Colors */
+  --ifm-code-background: #f1f5f9;
+  --ifm-pre-background: #f1f5f9;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
+  
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, sans-serif;
+  --ifm-font-weight-base: 400;
+  --ifm-font-weight-semibold: 500;
+  --ifm-font-weight-bold: 600;
+  
+  /* Heading Sizes */
+  --ifm-h1-font-size: 2.0rem;
+  --ifm-h2-font-size: 1.5rem;
+  --ifm-h3-font-size: 1.25rem;
+  --ifm-h4-font-size: 1.1rem;
+  
+  /* Spacing */
+  --ifm-leading: 1.6;
+  --ifm-spacing-horizontal: 1.5rem;
+  --ifm-spacing-vertical: 1.5rem;
+  
+  /* Borders and Shadows */
+  --ifm-global-border-width: 1px;
+  --ifm-global-radius: 6px;
+  --ifm-box-shadow-lw: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --ifm-box-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #60a5fa;
+  --ifm-color-primary-dark: #3b82f6;
+  --ifm-color-primary-darker: #2563eb;
+  --ifm-color-primary-darkest: #1d4ed8;
+  --ifm-color-primary-light: #93c5fd;
+  --ifm-color-primary-lighter: #bfdbfe;
+  --ifm-color-primary-lightest: #dbeafe;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Homepage hero section */
+.hero {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Service cards */
+.service-card {
+  background: white;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--ifm-box-shadow-lw);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  box-shadow: var(--ifm-box-shadow-md);
+}
+
+.service-card h3 {
+  color: var(--ifm-color-primary);
+  margin-bottom: 1rem;
+}
+
+/* Portfolio items */
+.portfolio-item {
+  background: white;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--ifm-box-shadow-lw);
+}
+
+.portfolio-item h4 {
+  color: var(--ifm-color-emphasis-900);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Call to action buttons */
+.cta-button {
+  background: var(--ifm-color-primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: var(--ifm-global-radius);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  background: var(--ifm-color-primary-dark);
+  color: white;
+  text-decoration: none;
+}
+
+.cta-button--secondary {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  border: 2px solid var(--ifm-color-primary);
+}
+
+.cta-button--secondary:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+/* Professional sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section--light {
+  background: var(--ifm-color-secondary-lightest);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--ifm-color-emphasis-900);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Testimonial styling */
+.testimonial {
+  background: white;
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--ifm-box-shadow-lw);
+  border-radius: var(--ifm-global-radius);
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.testimonial-author {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 966px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .service-card,
+  .portfolio-item {
+    margin-bottom: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* Blog post styling */
+.blog-post-item {
+  margin-bottom: 3rem;
+}
+
+.blog-post-item h2 {
+  margin-bottom: 1rem;
+}
+
+.blog-post-item .blog-post-meta {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation improvements */
+.navbar {
+  box-shadow: var(--ifm-box-shadow-lw);
+}
+
+.navbar__title {
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* Footer styling */
+.footer {
+  background: var(--ifm-color-emphasis-100);
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.footer__title {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+}
+
+.footer__item {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.footer__item:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar styling with icons */
+.menu__link {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--color-link-hover);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu__link--active {
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darker) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Category headers */
+.menu__list-item-collapsible > .menu__link--sublist {
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-900);
+  font-size: 0.9rem;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-bottom: 4px;
+}
+
+/* Add icons using CSS */
+.sidebar-welcome .menu__link::before {
+  content: "🏠";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-about .menu__link::before {
+  content: "👤";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-services .menu__link--sublist::before {
+  content: "⚙️";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-service-item .menu__link::before {
+  content: "▸";
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.sidebar-portfolio .menu__link::before {
+  content: "💼";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Portfolio submenu items */
+.sidebar-portfolio-item .menu__link::before {
+  content: "▸";
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.sidebar-portfolio-item .menu__link[href*="adrs"]::before {
+  content: "▸";
+}
+
+.sidebar-portfolio-item .menu__link[href*="diagrams"]::before {
+  content: "▸";
+}
+
+.sidebar-portfolio-item .menu__link[href*="portfolio"]:not([href*="adrs"]):not([href*="diagrams"])::before {
+  content: "▸";
+}
+
+.sidebar-resources .menu__link--sublist::before {
+  content: "📚";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-blog-link .menu__link::before {
+  content: "▸";
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.sidebar-contact-link .menu__link::before {
+  content: "▸";
+  margin-right: 8px;
+  font-size: 14px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* Collapsible arrow styling */
+.menu__caret {
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu__list-item--collapsed .menu__caret {
+  transform: rotate(-90deg);
+}
+
+/* Improve visual hierarchy */
+.menu__list-item-collapsible {
+  margin: 2px 0;
+}
+
+.menu__list-item-collapsible:first-child {
+  margin-top: 0;
+}
+
+/* Add subtle dividers between main sections */
+.menu__list-item-collapsible:not(:last-child) {
+  border-bottom: 1px solid var(--ifm-color-emphasis-100);
+  padding-bottom: 2px;
+  margin-bottom: 3px;
+}
+
+/* Hover effects for better UX */
+.menu__list-item-collapsible .menu__link--sublist:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 4px;
+}
+
+/* Active state improvements */
+.menu__list-item--active > .menu__link {
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darker) !important;
+  border-left: 3px solid var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+.menu__list-item--active > .menu__link::before {
+  filter: none;
+  opacity: 1;
+}
+
+/* Ensure nested active items are also visible */
+.menu__list .menu__list .menu__link--active {
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darker) !important;
+  font-weight: 600;
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Hover state for active items */
+.menu__link--active:hover {
+  background: var(--ifm-color-primary-light) !important;
+  color: var(--ifm-color-primary-darker) !important;
+}
+
+/* Additional contrast improvements */
+.theme-doc-sidebar-item-link-level-1.menu__link--active {
+  background: var(--ifm-color-primary-lightest) !important;
+  color: var(--ifm-color-primary-darker) !important;
+  font-weight: 600;
+  border-radius: 6px;
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Make sure icons are visible on active items */
+.menu__link--active::before {
+  filter: none !important;
+  opacity: 1 !important;
+  color: var(--ifm-color-primary-darker);
+}
+
+/* Improve readability with better typography */
+.menu__link--active {
+  text-shadow: none;
+}
+
+/* Documentation layout improvements */
+.docs-wrapper {
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.docs-sidebar {
+  background: var(--color-sidebar-bg);
+  border-right: 1px solid var(--color-divider);
+  min-width: 280px;
+  max-width: 320px;
+}
+
+.docs-content {
+  flex-grow: 1;
+  max-width: none;
+}
+
+/* Sidebar responsive behavior */
+@media (max-width: 996px) {
+  .docs-sidebar {
+    min-width: 260px;
+  }
+}
+
+/* Improve sidebar scrolling */
+.theme-doc-sidebar-menu {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Custom scrollbar for sidebar */
+.theme-doc-sidebar-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.theme-doc-sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-doc-sidebar-menu::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-300);
+  border-radius: 3px;
+}
+
+.theme-doc-sidebar-menu::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-400);
+}
+
+/* Sidebar menu styling */
+.theme-doc-sidebar-menu {
+  padding: 1rem;
+}
+
+/* Sidebar container improvements */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--color-divider);
+  background: var(--color-sidebar-bg);
+}
+
+/* Menu list spacing */
+.menu__list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu__list-item {
+  margin: 2px 0;
+}
+
+.menu__list-item--collapsed .menu__list {
+  margin-top: 4px;
+}
+
+/* Nested menu items */
+.menu__list .menu__list {
+  margin-left: 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--ifm-color-emphasis-200);
+  margin-top: 4px;
+}
+
+.menu__list .menu__list .menu__link {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+/* Documentation page styling */
+.markdown h1 {
+  color: var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary-lightest);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.markdown h2 {
+  color: var(--ifm-color-emphasis-900);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  background: var(--ifm-color-primary-lightest);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+/* Table of contents styling */
+.table-of-contents {
+  border-left: 2px solid var(--ifm-color-emphasis-200);
+  padding-left: 1rem;
+}
+
+.table-of-contents__link {
+  color: var(--ifm-color-emphasis-700);
+  transition: color 0.2s ease-in-out;
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--ifm-color-primary);
+  font-weight: 600;
+}
+
+/* ============================================================================
+   TYPOGRAPHY SYSTEM
+   ============================================================================ */
+
+/* Base Typography */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Text emphasis styles */
+strong, b {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Labels and UI elements */
+.badge, 
+.tag,
+label,
+.menu__link,
+.navbar__link,
+.button {
+  font-weight: 500;
+}
+
+/* ============================================================================
+   HEADING HIERARCHY
+   ============================================================================ */
+
+/* H1 - Main Page Title */
+h1, .h1 {
+  font-size: 2.0rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.2;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* H2 - Section Header */
+h2, .h2 {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding-bottom: 0.5rem !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.3;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* H3 - Subsection Header */
+h3, .h3 {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-900);
+}
+
+/* H4 - Minor Labels or Inline Titles */
+h4, .h4 {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  margin-top: 1.25rem !important;
+  margin-bottom: 0.5rem !important;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* H5 and H6 - Maintain hierarchy but smaller */
+h5, .h5 {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--ifm-color-emphasis-800);
+}
+
+h6, .h6 {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  color: var(--ifm-color-emphasis-700);
+  text-transform: none !important;
+}
+
+/* ============================================================================
+   CONTENT SPACING & LAYOUT
+   ============================================================================ */
+
+/* Main content areas */
+.markdown,
+.theme-doc-markdown {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* List styling */
+ul, ol {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+/* Ensure proper spacing between H2 sections */
+h2 + * {
+  margin-top: 1rem;
+}
+
+/* Code and preformatted text should not use heading styles */
+code, pre, .prism-code {
+  font-family: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace !important;
+}
+
+/* ============================================================================
+   DARK MODE ADJUSTMENTS
+   ============================================================================ */
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: var(--ifm-color-content);
+}
+
+[data-theme='dark'] h2 {
+  border-bottom-color: var(--ifm-color-emphasis-300) !important;
+}
+
+/* ============================================================================
+   RESPONSIVE TYPOGRAPHY
+   ============================================================================ */
+
+@media (max-width: 768px) {
+  h1, .h1 {
+    font-size: 1.75rem !important;
+  }
+  
+  h2, .h2 {
+    font-size: 1.35rem !important;
+  }
+  
+  h3, .h3 {
+    font-size: 1.15rem !important;
+  }
+  
+  h4, .h4 {
+    font-size: 1.05rem !important;
+  }
+} 

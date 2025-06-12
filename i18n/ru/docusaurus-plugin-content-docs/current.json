@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Текущая",
+    "description": "The label for version current"
+  },
+  "sidebar.mainSidebar.category.Services": {
+    "message": "Услуги",
+    "description": "The label for category Services in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Portfolio": {
+    "message": "Портфолио",
+    "description": "The label for category Portfolio in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.category.Resources": {
+    "message": "Ресурсы",
+    "description": "The label for category Resources in sidebar mainSidebar"
+  },
+  "sidebar.mainSidebar.link.Blog": {
+    "message": "Блог",
+    "description": "The label for link Blog in sidebar mainSidebar, linking to /blog"
+  },
+  "sidebar.mainSidebar.link.Contact": {
+    "message": "Контакты",
+    "description": "The label for link Contact in sidebar mainSidebar, linking to mailto:contact@mikeshogin.com"
+  },
+  "sidebar.mainSidebar.doc.Welcome": {
+    "message": "Добро пожаловать",
+    "description": "The label for the doc item Welcome in sidebar mainSidebar, linking to the doc index"
+  },
+  "sidebar.mainSidebar.doc.About": {
+    "message": "Обо мне",
+    "description": "The label for the doc item About in sidebar mainSidebar, linking to the doc about"
+  },
+  "sidebar.mainSidebar.doc.System Analysis": {
+    "message": "Системный анализ",
+    "description": "The label for the doc item System Analysis in sidebar mainSidebar, linking to the doc services/system-analysis"
+  },
+  "sidebar.mainSidebar.doc.Mentorship & Coaching": {
+    "message": "Менторство и коучинг",
+    "description": "The label for the doc item Mentorship & Coaching in sidebar mainSidebar, linking to the doc services/mentorship"
+  },
+  "sidebar.mainSidebar.doc.IT Consulting": {
+    "message": "IT-консалтинг",
+    "description": "The label for the doc item IT Consulting in sidebar mainSidebar, linking to the doc services/consulting"
+  },
+  "sidebar.mainSidebar.doc.Architecture Audit": {
+    "message": "Аудит архитектуры",
+    "description": "The label for the doc item Architecture Audit in sidebar mainSidebar, linking to the doc services/architecture-audit"
+  },
+  "sidebar.mainSidebar.doc.Overview": {
+    "message": "Обзор",
+    "description": "The label for the doc item Overview in sidebar mainSidebar, linking to the doc portfolio"
+  },
+  "sidebar.mainSidebar.doc.ADRs": {
+    "message": "ADR",
+    "description": "The label for the doc item ADRs in sidebar mainSidebar, linking to the doc portfolio/adrs"
+  },
+  "sidebar.mainSidebar.doc.Diagrams": {
+    "message": "Диаграммы",
+    "description": "The label for the doc item Diagrams in sidebar mainSidebar, linking to the doc portfolio/diagrams"
+  }
+}

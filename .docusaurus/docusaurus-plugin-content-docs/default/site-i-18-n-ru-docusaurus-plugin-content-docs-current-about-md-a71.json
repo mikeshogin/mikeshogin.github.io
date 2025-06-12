@@ -1,0 +1,29 @@
+{
+  "id": "about",
+  "title": "Обо мне",
+  "description": "Системный аналитик и IT-архитектор - профессиональный опыт и экспертиза",
+  "source": "@site/i18n/ru/docusaurus-plugin-content-docs/current/about.md",
+  "sourceDirName": ".",
+  "slug": "/about",
+  "permalink": "/ru/about",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/about.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "about",
+    "title": "Обо мне",
+    "description": "Системный аналитик и IT-архитектор - профессиональный опыт и экспертиза",
+    "slug": "/about"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Добро пожаловать",
+    "permalink": "/ru/"
+  },
+  "next": {
+    "title": "Services Overview",
+    "permalink": "/ru/services"
+  }
+}

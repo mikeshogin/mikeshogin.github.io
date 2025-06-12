@@ -1,0 +1,28 @@
+{
+  "id": "services/system-analysis",
+  "title": "System Analysis",
+  "description": "Comprehensive analysis of technical systems to identify inefficiencies and improvement opportunities",
+  "source": "@site/docs/services/system-analysis.md",
+  "sourceDirName": "services",
+  "slug": "/services/system-analysis",
+  "permalink": "/ru/services/system-analysis",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/mikeshogin/mikeshogin.github.io/tree/main/docs/services/system-analysis.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "id": "system-analysis",
+    "title": "System Analysis",
+    "description": "Comprehensive analysis of technical systems to identify inefficiencies and improvement opportunities"
+  },
+  "sidebar": "mainSidebar",
+  "previous": {
+    "title": "Services Overview",
+    "permalink": "/ru/services"
+  },
+  "next": {
+    "title": "Mentorship & Coaching",
+    "permalink": "/ru/services/mentorship"
+  }
+}

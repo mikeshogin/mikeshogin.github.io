@@ -1,0 +1,50 @@
+{
+  "title": {
+    "message": "Майк Шогин",
+    "description": "The title in the navbar"
+  },
+  "item.label.About Me": {
+    "message": "Обо мне",
+    "description": "Navbar item with label About Me"
+  },
+  "item.label.Portfolio": {
+    "message": "Портфолио",
+    "description": "Navbar item with label Portfolio"
+  },
+  "item.label.Services": {
+    "message": "Услуги",
+    "description": "Navbar item with label Services"
+  },
+  "item.label.System Analysis": {
+    "message": "Системный анализ",
+    "description": "Navbar item with label System Analysis"
+  },
+  "item.label.Mentorship & Coaching": {
+    "message": "Менторство и коучинг",
+    "description": "Navbar item with label Mentorship & Coaching"
+  },
+  "item.label.IT Consulting": {
+    "message": "IT-консалтинг",
+    "description": "Navbar item with label IT Consulting"
+  },
+  "item.label.Architecture Audit": {
+    "message": "Аудит архитектуры",
+    "description": "Navbar item with label Architecture Audit"
+  },
+  "item.label.Blog": {
+    "message": "Блог",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "logo.alt": {
+    "message": "Mike Shogin Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.About": {
+    "message": "Обо мне",
+    "description": "Navbar item with label About"
+  }
+}
