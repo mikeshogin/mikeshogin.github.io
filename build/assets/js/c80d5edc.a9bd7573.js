@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikeshogin_website=self.webpackChunkmikeshogin_website||[]).push([[607],{7699:e=>{e.exports=JSON.parse('{"label":"architecture","permalink":"/blog/tags/architecture","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

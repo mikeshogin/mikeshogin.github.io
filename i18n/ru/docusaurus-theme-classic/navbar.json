@@ -46,5 +46,9 @@
   "item.label.About": {
     "message": "Обо мне",
     "description": "Navbar item with label About"
+  },
+  "item.label.Mission": {
+    "message": "Миссия",
+    "description": "Navbar item with label Mission"
   }
 }

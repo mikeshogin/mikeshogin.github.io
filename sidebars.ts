@@ -10,6 +10,12 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
+      id: 'mission',
+      label: 'Mission',
+      className: 'sidebar-mission',
+    },
+    {
+      type: 'doc',
       id: 'about',
       label: 'About',
       className: 'sidebar-about',

@@ -79,6 +79,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/mission',
+          position: 'left',
+          label: 'Mission',
+        },
+        {
           to: '/about',
           position: 'left',
           label: 'About',

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmikeshogin_website=self.webpackChunkmikeshogin_website||[]).push([[130],{7666:e=>{e.exports=JSON.parse('[{"label":"system-analysis","permalink":"/ru/blog/tags/system-analysis","count":1},{"label":"architecture","permalink":"/ru/blog/tags/architecture","count":1},{"label":"methodology","permalink":"/ru/blog/tags/methodology","count":1}]')}}]);
