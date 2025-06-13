@@ -47,7 +47,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/',
-          editUrl: 'https://github.com/mikeshogin/mikeshogin.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -65,7 +64,7 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-      } satisfies Preset.Options,
+      },
     ],
   ],
 
@@ -195,6 +194,12 @@ const config: Config = {
       },
     ],
   } satisfies Preset.ThemeConfig,
+
+  themes: ['@docusaurus/theme-mermaid'],
+
+  markdown: {
+    mermaid: true,
+  },
 };
 
 export default config; 

@@ -769,4 +769,17 @@ code, pre, .prism-code {
   h4, .h4 {
     font-size: 1.05rem !important;
   }
-} 
+}
+
+/* Center all mermaid diagrams */
+.docusaurus-mermaid-container  {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.docusaurus-mermaid-container {
+    margin: 1rem auto;
+}
