@@ -25,7 +25,7 @@
   },
   "link.title.Architecture Audit": {
     "message": "Аудит архитектуры",
-    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture-audit"
+    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture"
   },
   "link.title.Blog": {
     "message": "Блог",
@@ -81,7 +81,7 @@
   },
   "link.item.label.Architecture Audit": {
     "message": "Аудит архитектуры",
-    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture-audit"
+    "description": "The label of footer link with label=Architecture Audit linking to /services/architecture"
   },
   "link.item.label.Blog": {
     "message": "Блог",

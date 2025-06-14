@@ -45,7 +45,7 @@
   },
   "sidebar.mainSidebar.doc.Architecture Audit": {
     "message": "Аудит архитектуры",
-    "description": "The label for the doc item Architecture Audit in sidebar mainSidebar, linking to the doc services/architecture-audit"
+    "description": "The label for the doc item Architecture Audit in sidebar mainSidebar, linking to the doc services/architecture"
   },
   "sidebar.mainSidebar.doc.Overview": {
     "message": "Обзор",
