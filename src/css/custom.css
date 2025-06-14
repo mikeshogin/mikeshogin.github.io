@@ -89,6 +89,13 @@
   --ifm-color-primary-lighter: #bfdbfe;
   --ifm-color-primary-lightest: #dbeafe;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  
+  /* Dark mode sidebar fixes */
+  --color-sidebar-bg: #1b1b1d;
+  --color-divider: #2d2d30;
+  --ifm-menu-color: #ffffff;
+  --ifm-menu-color-background-active: rgba(96, 165, 250, 0.1);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.05);
 }
 
 /* Homepage hero section */
@@ -332,6 +339,12 @@
   font-size: 16px;
 }
 
+.sidebar-mission .menu__link::before {
+  content: "🎯";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
 .sidebar-about .menu__link::before {
   content: "👤";
   margin-right: 8px;
@@ -344,11 +357,41 @@
   font-size: 16px;
 }
 
-.sidebar-service-item .menu__link::before {
-  content: "▸";
+/* Individual service icons */
+.sidebar-service-architecture .menu__link::before {
+  content: "🧭";
   margin-right: 8px;
-  font-size: 14px;
-  color: var(--ifm-color-emphasis-600);
+  font-size: 16px;
+}
+
+.sidebar-service-analysis .menu__link::before {
+  content: "🔍";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-service-ai .menu__link::before {
+  content: "🤖";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-service-documentation .menu__link::before {
+  content: "📚";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-service-mentorship .menu__link::before {
+  content: "🎓";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+.sidebar-service-consulting .menu__link::before {
+  content: "🧩";
+  margin-right: 8px;
+  font-size: 16px;
 }
 
 .sidebar-portfolio .menu__link::before {
@@ -749,6 +792,36 @@ code, pre, .prism-code {
   border-bottom-color: var(--ifm-color-emphasis-300) !important;
 }
 
+/* Dark mode sidebar menu fixes */
+[data-theme='dark'] .menu__link {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .menu__link--sublist {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .menu__link--active {
+  background: rgba(96, 165, 250, 0.2) !important;
+  color: #60a5fa !important;
+  border-left-color: #60a5fa !important;
+}
+
+[data-theme='dark'] .menu__link--active:hover {
+  background: rgba(96, 165, 250, 0.3) !important;
+  color: #60a5fa !important;
+}
+
+[data-theme='dark'] .theme-doc-sidebar-container {
+  background: #1b1b1d !important;
+  border-right-color: #2d2d30 !important;
+}
+
 /* ============================================================================
    RESPONSIVE TYPOGRAPHY
    ============================================================================ */
@@ -782,4 +855,29 @@ code, pre, .prism-code {
 
 .docusaurus-mermaid-container {
     margin: 1rem auto;
+}
+
+/* Mermaid diagram styling */
+.mermaid-wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Dark mode mermaid fixes - target specific elements */
+[data-theme='dark'] .mermaid-wrapper .docusaurus-mermaid-container rect {
+  fill: #374151 !important;
+  stroke: #60a5fa !important;
+}
+
+[data-theme='dark'] .mermaid-wrapper .docusaurus-mermaid-container text {
+  fill: #ffffff !important;
+}
+
+[data-theme='dark'] .mermaid-wrapper .docusaurus-mermaid-container path {
+  stroke: #60a5fa !important;
+}
+
+[data-theme='dark'] .mermaid-wrapper .docusaurus-mermaid-container marker path {
+  fill: #60a5fa !important;
+  stroke: #60a5fa !important;
 }

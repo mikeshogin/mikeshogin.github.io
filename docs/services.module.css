@@ -6,12 +6,12 @@
 }
 
 .card {
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--ifm-color-emphasis-200);
     padding: 1.5rem;
     border-radius: 12px;
-    background-color: #fdfdfd;
+    background-color: var(--ifm-card-background-color);
     text-decoration: none;
-    color: inherit;
+    color: var(--ifm-font-color-base);
     transition: all 0.25s ease;
     display: block;
 }
@@ -20,24 +20,29 @@
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.25rem;
+    color: var(--ifm-heading-color);
 }
 
 .card p {
     margin: 0;
     line-height: 1.5;
-    color: #444;
+    color: var(--ifm-color-content-secondary);
 }
 
 .card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    background-color: #fcfcfc;
+    box-shadow: var(--ifm-global-shadow-md);
+    background-color: var(--ifm-hover-overlay);
     transform: translateY(-4px);
     text-decoration: none;
+    border-color: var(--ifm-color-primary);
 }
 
-.card:hover h3,
+.card:hover h3 {
+    color: var(--ifm-color-primary);
+}
+
 .card:hover p {
-    color: #222;
+    color: var(--ifm-font-color-base);
 }
 
 .card :is(h3, p, a) {

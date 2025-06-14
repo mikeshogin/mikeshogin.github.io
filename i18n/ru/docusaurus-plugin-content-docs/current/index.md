@@ -18,13 +18,18 @@ slug: /
 ---
 
 <p style={{ textAlign: 'center', fontWeight: 600, fontSize: '1.2rem' }}>От хаоса к ясности</p>
+
+<div className="mermaid-wrapper">
+
 ```mermaid
 flowchart LR
     A[🏳️ Продуктовые<br/>вызовы] --> B[🗂️ Структурированные<br/>решения] --> C[📄 Понятная<br/>документация]
 
-    classDef boxStyle fill:#f9f9f9,stroke:#ccc,stroke-width:1px,rx:8,ry:8;
-    class A,B,C boxStyle;
+    classDef nodeStyle fill:#e5e7eb,stroke:#2563eb,stroke-width:2px,rx:8,ry:8,color:#1f2937,font-weight:bold;
+    class A,B,C nodeStyle;
 ```
+
+</div>
 
 ---
 

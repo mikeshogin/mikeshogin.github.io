@@ -34,12 +34,36 @@ const sidebars: SidebarsConfig = {
                         id: 'services',
                     },
                     items: [
-                        'services/architecture',
-                        'services/system-analysis',
-                        'services/ai',
-                        'services/documentation',
-                        'services/mentorship',
-                        'services/consulting',
+                        {
+                            type: 'doc',
+                            id: 'services/architecture',
+                            className: 'sidebar-service-architecture'
+                        },
+                        {
+                            type: 'doc',
+                            id: 'services/system-analysis',
+                            className: 'sidebar-service-analysis'
+                        },
+                        {
+                            type: 'doc',
+                            id: 'services/ai',
+                            className: 'sidebar-service-ai'
+                        },
+                        {
+                            type: 'doc',
+                            id: 'services/documentation',
+                            className: 'sidebar-service-documentation'
+                        },
+                        {
+                            type: 'doc',
+                            id: 'services/mentorship',
+                            className: 'sidebar-service-mentorship'
+                        },
+                        {
+                            type: 'doc',
+                            id: 'services/consulting',
+                            className: 'sidebar-service-consulting'
+                        },
                     ]
                 },
             ]
