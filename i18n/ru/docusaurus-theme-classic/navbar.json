@@ -38,7 +38,7 @@
   "item.label.GitHub": {
     "message": "GitHub",
     "description": "Navbar item with label GitHub"
-  },z
+  },
   "logo.alt": {
     "message": "Mike Shogin Logo",
     "description": "The alt text of navbar logo"

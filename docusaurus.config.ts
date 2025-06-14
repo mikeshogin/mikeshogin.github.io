@@ -159,7 +159,7 @@ const config: Config = {
                         },
                         {
                             label: 'Architecture Audit',
-                            to: '/services/architecture-audit',
+                            to: '/services/architecture',
                         },
                     ],
                 },

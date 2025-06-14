@@ -1,0 +1,46 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+    display: block;
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.5;
+    color: #444;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background-color: #fcfcfc;
+    transform: translateY(-4px);
+    text-decoration: none;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #222;
+}
+
+.card :is(h3, p, a) {
+    text-decoration: none;
+    color: inherit;
+}
